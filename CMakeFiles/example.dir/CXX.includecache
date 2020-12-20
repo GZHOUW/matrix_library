@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/guangwei/matrix_library/main.cpp
+matrix.cpp
+/home/guangwei/matrix_library/matrix.cpp
+string
+-
+iostream
+-
+
+/home/guangwei/matrix_library/matrix.cpp
+matrix.h
+/home/guangwei/matrix_library/matrix.h
+iostream
+-
+
+/home/guangwei/matrix_library/matrix.h
+vector
+-
+string
+-
+
