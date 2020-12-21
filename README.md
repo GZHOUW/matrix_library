@@ -23,8 +23,9 @@ If you want to use the library in multiple files, modify the CMakeList.txt by ad
 		Matrix a will be:
 		4 4 
 		4 4
-* **matrix \<type> a(vector<vector<type>>)**
+* **matrix \<type> a(vector\<vector\<type>>)**
 		matrix<float> c({ {1.1, 2.2}, {3.3, 4.4} });
+	
 	 	Matrix a will be:
 		1.1 2.2 
 		3.3 4.4
