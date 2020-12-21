@@ -34,7 +34,7 @@ If you want to use the library in multiple files, modify the CMakeList.txt by ad
 		1 2
 		3 4
 
-### Matrix in different types
+### Matrix in Different Types
 
 
 * **\<char> matrix**
@@ -61,8 +61,7 @@ If you want to use the library in multiple files, modify the CMakeList.txt by ad
 		1.1 2.2 3.3
 		4.4 5.5 6.6
 
-* **Transpose the matrix**
-A function that returns a transposed copy of the input matrix.
+* **Transpose the matrix:** returns a transposed copy of the input matrix.
 
 		matrix<double> e_transposed = e.transpose();
 		
@@ -74,3 +73,14 @@ A function that returns a transposed copy of the input matrix.
 		1.1 4.4
 		2.2 5.5
 		3.3 6.6
+
+* **Matrix Multiplication:** use overloaded '*' operator to multiply of two matrices with dimensions (A,B) and (B,C), resulting (A,C)
+		
+		matrix<int> X({ {1,2,3}, {4,5,6}, {7,8,9} }); 
+    		matrix<int> Y({ {1,4,7}, {2,5,8}, {3,6,9} });
+    		matrix<int> Z = X * Y;
+		
+		Matrix Z will be:
+		14  32  50
+		32  77  122
+		50  122 194
