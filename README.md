@@ -1,6 +1,10 @@
 # matrix_library
 A linear algebra library written in C++ that performs M*N matrix multiplication and transpose
 
+## Requirements
+C++ 11 or above
+Linux Ubuntu 16.04 or above/equivalent
+
 ## How to Use
 ### Step 1
 Create a main.cpp file in which you include "matrix.cpp" 
@@ -84,3 +88,5 @@ If you want to use the library in multiple files, modify the CMakeList.txt by ad
 		14  32  50
 		32  77  122
 		50  122 194
+
+* **For more examples please see and run main.cpp**
