@@ -77,8 +77,8 @@ If you want to use the library in multiple files, modify the CMakeList.txt by ad
 * **Matrix Multiplication:** use overloaded '*' operator to multiply of two matrices with dimensions (A,B) and (B,C), resulting (A,C)
 		
 		matrix<int> X({ {1,2,3}, {4,5,6}, {7,8,9} }); 
-    		matrix<int> Y({ {1,4,7}, {2,5,8}, {3,6,9} });
-    		matrix<int> Z = X * Y;
+		matrix<int> Y({ {1,4,7}, {2,5,8}, {3,6,9} });
+		matrix<int> Z = X * Y;
 		
 		Matrix Z will be:
 		14  32  50
