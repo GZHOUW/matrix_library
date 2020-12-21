@@ -21,16 +21,34 @@ If you want to use the library in multiple files, modify the CMakeList.txt by ad
 
 * **Initialize with row_size, col_size, and val**
 
-		matrix<int> a(2,2,4);
+		matrix<int> b(2, 2, 4);
 	
-		Matrix a will be:
+		Matrix b will be:
 		4 4 
 		4 4
 * **Initialize with 2D vector**
 
-		matrix<float> c({ {1.1, 2.2}, {3.3, 4.4} });
+		matrix<int> c({ {1, 2}, {3, 4} });
 	
-	 	Matrix a will be:
+	 	Matrix c will be:
+		1 2
+		3 4
+
+### Matrix in different types
+
+
+* **char**
+
+		matrix<char> d(2, 2, 'w');
+	
+		Matrix d will be:
+		w w 
+		w w
+* **double**
+
+		matrix<double> e({ {1.1, 2.2}, {3.3, 4.4} });
+	
+	 	Matrix e will be:
 		1.1 2.2 
 		3.3 4.4
 		
