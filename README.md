@@ -10,7 +10,7 @@ If you want to use the library in multiple files, modify the CMakeList.txt by ad
 
 ## Library Documentation
 ### Matrix Initialization
----
+
 * **Initialize empty matrix**
 
 		matrix<int> a;
@@ -37,14 +37,14 @@ If you want to use the library in multiple files, modify the CMakeList.txt by ad
 ### Matrix in different types
 
 
-* **char**
+* **\<char> matrix**
 
 		matrix<char> d(2, 2, 'w');
 	
 		Matrix d will be:
 		w w 
 		w w
-* **double**
+* **\<double> matrix**
 
 		matrix<double> e({ {1.1, 2.2}, {3.3, 4.4} });
 	
@@ -52,4 +52,6 @@ If you want to use the library in multiple files, modify the CMakeList.txt by ad
 		1.1 2.2 
 		3.3 4.4
 		
-
+### Matrix Computation and Manipulation
+* **Print the matrix**
+		a.print();
