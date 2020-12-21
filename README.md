@@ -9,32 +9,24 @@ In terminal, run $cmake .
 If you want to use the library in multiple files, modify the CMakeList.txt by adding file names under "add_executable"
 
 ## Library Documentation
-### Matrix Representation
-Matrix Initialization
+### Matrix Initialization
 ---
-* **matrix \<typename> a(row_size,column_size, const initial_value)**
-	
-	Eg:	
-		
-		matrix <int> a(2,2,4);
+* **matrix \<type> a;**
+		matrix<int> a;
+		Matrix a will be:
+		(empty)
+
+
+* **matrix \<type> a(row_size, column_size, value)**	
+		matrix<int> a(2,2,4);
 	
 		Matrix a will be:
 		4 4 
 		4 4
+* **matrix \<type> a(vector<vector<type>>)**
+		matrix<float> c({ {1.1, 2.2}, {3.3, 4.4} });
+	 	Matrix a will be:
+		1.1 2.2 
+		3.3 4.4
 		
-* **matrix \<typename> a(row_size,column_size)**
-	
-	Eg:
-		
-		matrix <int> a(2,2);
-		
-		Matrix a will be:
-		0 0
-		0 0
-		
-* **matrix \<typename> a;**
-	
-	Eg:
-		
-		matrix <int> a;
 
