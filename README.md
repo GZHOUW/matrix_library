@@ -46,12 +46,31 @@ If you want to use the library in multiple files, modify the CMakeList.txt by ad
 		w w
 * **\<double> matrix**
 
-		matrix<double> e({ {1.1, 2.2}, {3.3, 4.4} });
+		matrix<double> e({ {1.1, 2.2, 3,3}, {4,4, 5.5, 6.6} });
 	
 	 	Matrix e will be:
-		1.1 2.2 
-		3.3 4.4
+		1.1 2.2 3.3
+		4.4 5.5 6.6
 		
 ### Matrix Computation and Manipulation
 * **Print the matrix**
-		a.print();
+
+		e.print();
+		
+		The following will be printed:
+		1.1 2.2 3.3
+		4.4 5.5 6.6
+
+* **Transpose the matrix**
+A function that returns a transposed copy of the input matrix.
+
+		matrix<double> e_transposed = e.transpose();
+		
+		Matrix e will still be:
+		1.1 2.2 3.3
+		4.4 5.5 6.6
+		
+		Matrix e_transposed will be:
+		1.1 4.4
+		2.2 5.5
+		3.3 6.6
