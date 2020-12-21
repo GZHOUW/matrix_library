@@ -12,18 +12,21 @@ If you want to use the library in multiple files, modify the CMakeList.txt by ad
 ### Matrix Initialization
 ---
 * **matrix \<type> a;**
+
 		matrix<int> a;
 		Matrix a will be:
 		(empty)
 
 
-* **matrix \<type> a(row_size, column_size, value)**	
+* **matrix \<type> a(row_size, column_size, value)**
+
 		matrix<int> a(2,2,4);
 	
 		Matrix a will be:
 		4 4 
 		4 4
 * **matrix \<type> a(vector\<vector\<type>>)**
+
 		matrix<float> c({ {1.1, 2.2}, {3.3, 4.4} });
 	
 	 	Matrix a will be:
